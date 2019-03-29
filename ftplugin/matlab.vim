@@ -14,6 +14,8 @@ set cpo-=C
 setlocal fo+=croql
 setlocal comments=:%>,:%
 setlocal commentstring=%\ %s
+setlocal shiftwidth=4
+setlocal expandtab
 
 if exists("loaded_matchit")
   let s:conditionalEnd = '\([-+{\*\:(\/]\s*\)\@<!\<end\>\(\s*[-+}\:\*\/)]\)\@!'
