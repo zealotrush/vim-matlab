@@ -15,10 +15,10 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-syn keyword matlabStatement		return function
+syn keyword matlabStatement		return function classdef methods properties events
 syn keyword matlabConditional		switch case else elseif end if otherwise break continue
 syn keyword matlabRepeat		do for while
-syn keyword matlabStorageClass		classdef methods properties events persistent global
+syn keyword matlabStorageClass		persistent global
 syn keyword matlabExceptions		try catch rethrow throw
 
 syn keyword matlabTodo			contained  TODO NOTE FIXME XXX
