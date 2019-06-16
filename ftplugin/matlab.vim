@@ -14,9 +14,6 @@ set cpo-=C
 setlocal fo+=croql
 setlocal comments=:%>,:%
 setlocal commentstring=%\ %s
-setlocal softtabstop=4
-setlocal shiftwidth=4
-setlocal expandtab
 
 if exists("loaded_matchit")
   let s:conditionalEnd = '\([-+{\*\:(\/]\s*\)\@<!\<end\>\(\s*[-+}\:\*\/)]\)\@!'
@@ -31,9 +28,8 @@ if has("gui_win32") && !exists("b:browsefilter")
 	\ "All files (*.*)\t*.*\n"
 endif
 
-let b:undo_ftplugin = "setlocal suffixesadd< suffixes< "
+let b:undo_ftplugin = "setlocal sua< su< com< cms< "
       \ . "| unlet! b:browsefilter"
       \ . "| unlet! b:match_words"
 
 let &cpo = s:save_cpo
-
